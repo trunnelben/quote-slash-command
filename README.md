@@ -14,7 +14,7 @@ Typeahead<br>
 1. Install using `npm install`
 2. Run using `npm start`
 3. Add a Mixmax Slash Command in your Mixmax dashboard. (Call it quote) Should look like:<br>
-![Mixmax Settings](<img src="https://github.com/trunnelben/quote-slash-command/blob/master/Screenshots/Mixmax_Settings.png" alt="Mixmax Settings" style="width: 200px;"/>)
+![Mixmax Settings](https://github.com/trunnelben/quote-slash-command/blob/master/Screenshots/Mixmax_Settings.png)
 4. Quit Chrome and restart it using the following command on OS X: `open -a Google\ Chrome --args --ignore-certificate-errors`. See [here](http://developer.mixmax.com/docs/integration-api-appendix#local-development-error-neterr_insecure_response) for why.
 5. Compose an email in Gmail using Mixmax and type /quote
 6. Type anything after /quote to generate a random quote, and type again for a new quote - Choose the quote you like
