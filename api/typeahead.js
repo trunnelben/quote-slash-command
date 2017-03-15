@@ -35,7 +35,7 @@ module.exports = function(req, res) {
       return !quote || !quote[0] || !quote[0].content;
     })
     .map(function(quote) {
-      console.log(quote[1].content); //get display more quotes to choose from.
+      //console.log(quote[1].content); //get display more quotes to choose from.
       return {
         title: quote[0].content,
         text: quote[0].content

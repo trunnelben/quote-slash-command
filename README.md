@@ -1,25 +1,23 @@
-# Giphy Slash Command for Mixmax
+# Quote Slash Command for Mixmax
 
 This is an open source Mixmax Slash Command. See <http://developer.mixmax.com/docs/overview-slash-commands#tutorial-building-mygiphy> for more information about how to use this example code in Mixmax.
 
 For a more complex example using multi-word search, see [Soundcloud command](https://github.com/simonxca/mixmax-soundcloud-slash-command).
 
+## What it should look like:
+##Typeahead<br>
+![typeahead](http://i.makeagif.com/media/3-15-2017/2-2d1W.gif)
+
+
 ## Running locally
 
 1. Install using `npm install`
 2. Run using `npm start`
-
-To simulate locally how Mixmax calls the typeahead URL (to return a JSON list of typeahead results), run:
-
-```
-curl https://localhost:9145/typeahead?text=cats --insecure
-```
-
-To simulate locally how Mixmax calls the resolver URL (to return HTML that goes into the email), run:
-
-```
-curl https://localhost:9145/resolver?text=cats --insecure
-```
+3. Add a Mixmax Slash Command in your Mixmax dashboard. (Call it quote) Should look like:<br>
+![Mixmax Settings](/Users/Trunnelben/Desktop/quote-slash-command/Screenshots/Mixmax_Settings.png)
+4. Quit Chrome and restart it using the following command on OS X: `open -a Google\ Chrome --args --ignore-certificate-errors`. See [here](http://developer.mixmax.com/docs/integration-api-appendix#local-development-error-neterr_insecure_response) for why.
+5. Compose an email in Gmail using Mixmax and type /quote
+6. Type anything after /quote to generate a random quote, and type again for a new quote - Choose the quote you like
 
 ## Why do we run it in https locally?
 
